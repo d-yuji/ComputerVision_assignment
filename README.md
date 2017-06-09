@@ -2,4 +2,7 @@
 2017 spring term Computer Vision assginment
 
 ## Language
-Maybe C++ or Python
+C++
+
+## 実行
+run ./dataset 1

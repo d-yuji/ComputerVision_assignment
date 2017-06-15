@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 
   // データセットのパスを設定する
   const string dirData = argv[1]; // Path to the dataset
-  const string lv = argv[2];
+  const string lv = argv[2]; //レベルの指定
   
   // アノテーションファイルを指定します
   const string fn_train_target = "target_lv" + lv + "_train_1.csv";
@@ -37,9 +37,12 @@ int main(int argc, char *argv[]) {
   CAlconDatabase testdata( dirData, fnTestTar, fnTestGrn );
 
   // ターゲットごとに認識します
-  CMyAlgorithm myAlg;
+  CMyAlgorithm myAlg;//自分でアルゴリズムを作るクラス
+
   vector<int> ids = testdata.GetIDs(); // テストデータのID
   map< int, vector<string> > outs; // すべての出力結果. map[ key ] = vector<string>
+
+  // テストデータごとにアルゴリズムを適用
   for( vector<int>::iterator it = ids.begin(); it!=ids.end(); it++ ){
     
     // 認識対象のデータを取得する

@@ -9,8 +9,8 @@ using namespace cv;
 
 class CMyAlgorithm{
 public:
-	vector<string> exe( CTarget target, CAlconDatabase traindata ); // 一つのターゲットに含まれるUnicodeを返す
-	Mat extractFeatures( Mat img );
+  vector<string> exe( CTarget target, CAlconDatabase traindata ); // 一つのターゲットに含まれるUnicodeを返す
+  Mat extractFeatures( Mat img );
 }; // CMyAlgorithm
 
 #endif

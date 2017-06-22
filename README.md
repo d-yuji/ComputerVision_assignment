@@ -5,4 +5,4 @@
 C++
 
 ## 実行
-./run ../dataset 1
+./run ../../imagedata/dataset/dataset/ 1

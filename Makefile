@@ -1,16 +1,16 @@
 #Makefile
 
-#CVINC = `pkg-config --cflags opencv-3.2.0`
-#CVLIB = `pkg-config --libs opencv-3.2.0`
-CVINC = `pkg-config --cflags opencv`
-CVLIB = `pkg-config --libs opencv`
+#CVINC	=	`pkg-config --cflags opencv-3.2.0`
+#CVLIB	=	`pkg-config --libs opencv-3.2.0`
+CVINC	=	`pkg-config --cflags opencv`
+CVLIB	=	`pkg-config --libs opencv`
 
-CFLAGS = -std=c++14 -g -Wall -O2 $(CVINC)
-CXX = g++
-TARGET = ./run
-OBJS = main.o \
-		alcon.o \
-		myAlgorithm.o
+CFLAGS		=	-std=c++14 -g -Wall -O3 $(CVINC)
+CXX		=	g++
+TARGET		=	./run
+OBJS		=	main.o \
+			alcon.o \
+			myAlgorithm.o
 
 .SUFFIXES: .cpp .o
 

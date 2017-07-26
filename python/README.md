@@ -10,4 +10,4 @@ python kmeans_cluster.py
 
 ## link
 * pythonのプログラムは実践コンピュータビジョンのサンプルを参考に作成しました
-[実践コンピュータビジョン](https://www.oreilly.co.jp/pub/9784873116075/index.html)
+* [実践コンピュータビジョン](https://www.oreilly.co.jp/pub/9784873116075/index.html)
